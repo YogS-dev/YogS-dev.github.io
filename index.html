@@ -2,1075 +2,248 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <title>DigiMedia - Creative SEO HTML5 Template</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-digimedia-v2.css" />
-    <link rel="stylesheet" href="assets/css/animated.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <!--
-
-TemplateMo 568 DigiMedia
-
-https://templatemo.com/tm-568-digimedia
-
--->
+    <title>Portfolio website complete</title>
   </head>
-
   <body>
-    <!-- ***** Preloader Start ***** -->
-    <!-- <div id="js-preloader" class="js-preloader">
-    <div class="preloader-inner">
-      <span class="dot"></span>
-      <div class="dots">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div> -->
-    <!-- ***** Preloader End ***** -->
-
-    <!-- ***** Header Area Start ***** -->
-    <header
-      class="header-area header-sticky wow slideInDown"
-      data-wow-duration="0.75s"
-      data-wow-delay="0s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <nav class="main-nav">
-              <!-- ***** Logo Start ***** -->
-              <a href="index.html" class="logo">
-                <img src="assets/images/logo-v2.png" alt="" />
-              </a>
-              <!-- ***** Logo End ***** -->
-              <!-- ***** Menu Start ***** -->
-              <ul class="nav">
-                <li class="scroll-to-section">
-                  <a href="#top" class="active">Home</a>
-                </li>
-                <li class="scroll-to-section"><a href="#about">About</a></li>
-                <li class="scroll-to-section">
-                  <a href="#services">Services</a>
-                </li>
-                <li class="scroll-to-section">
-                  <a href="#portfolio">Projects</a>
-                </li>
-                <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-                <li class="scroll-to-section">
-                  <a href="#contact">Contact</a>
-                </li>
-                <li class="scroll-to-section">
-                  <div class="border-first-button">
-                    <a href="#contact">Free Quote</a>
-                  </div>
-                </li>
-              </ul>
-              <a class="menu-trigger">
-                <span>Menu</span>
-              </a>
-              <!-- ***** Menu End ***** -->
-            </nav>
-          </div>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Yoga</a>
         </div>
-      </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
-    <!-- ***** Header Area End ***** -->
 
-    <div
-      class="main-banner wow fadeIn"
-      id="top"
-      data-wow-duration="1s"
-      data-wow-delay="0.5s"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-lg-6 align-self-center">
-                <div
-                  class="left-content show-up header-text wow fadeInLeft"
-                  data-wow-duration="1s"
-                  data-wow-delay="1s"
-                >
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <h6>Digital Media Agency</h6>
-                      <h2>We Boost Your Website Traffic</h2>
-                      <p>
-                        This template is brought to you by TemplateMo website.
-                        Feel free to use this for a commercial purpose. You are
-                        not allowed to redistribute the template ZIP file on any
-                        other template website. Thank you.
-                      </p>
-                    </div>
-                    <div class="col-lg-12">
-                      <div class="border-first-button scroll-to-section">
-                        <a href="#contact">Free Quote</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div
-                  class="right-image wow fadeInRight"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.5s"
-                >
-                  <img src="assets/images/slider-dec-v2.png" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Yoga</span><br />
+            Web Developper
+          </h1>
+
+          <a href="#" class="button">Contact</a>
         </div>
-      </div>
-    </div>
 
-    <div id="about" class="about section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="row">
-              <div class="col-lg-6">
-                <div
-                  class="about-left-image wow fadeInLeft"
-                  data-wow-duration="1s"
-                  data-wow-delay="0.5s"
-                >
-                  <img src="assets/images/about-dec-v2.png" alt="" />
-                </div>
-              </div>
-              <div
-                class="col-lg-6 align-self-center wow fadeInRight"
-                data-wow-duration="1s"
-                data-wow-delay="0.5s"
-              >
-                <div class="about-right-content">
-                  <div class="section-heading">
-                    <h6>About Us</h6>
-                    <h4>Who is DigiMedia <em>Agency</em></h4>
-                    <div class="line-dec"></div>
-                  </div>
-                  <p>
-                    We hope this DigiMedia template is useful for your work. You
-                    can use this template for any purpose. You may
-                    <a
-                      rel="nofollow"
-                      href="http://paypal.me/templatemo"
-                      target="_blank"
-                      >contribute a little amount</a
-                    >
-                    via PayPal to
-                    <a href="https://templatemo.com/contact" target="_blank"
-                      >support TemplateMo</a
-                    >
-                    in creating new templates regularly.
-                  </p>
-                  <div class="row">
-                    <div class="col-lg-4 col-sm-4">
-                      <div
-                        class="skill-item first-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
-                      >
-                        <div class="progress" data-percentage="90">
-                          <span class="progress-left">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <span class="progress-right">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <div class="progress-value">
-                            <div>
-                              90%<br />
-                              <span>Coding</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4">
-                      <div
-                        class="skill-item second-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
-                      >
-                        <div class="progress" data-percentage="80">
-                          <span class="progress-left">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <span class="progress-right">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <div class="progress-value">
-                            <div>
-                              80%<br />
-                              <span>Photoshop</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4">
-                      <div
-                        class="skill-item third-skill-item wow fadeIn"
-                        data-wow-duration="1s"
-                        data-wow-delay="0s"
-                      >
-                        <div class="progress" data-percentage="80">
-                          <span class="progress-left">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <span class="progress-right">
-                            <span class="progress-bar"></span>
-                          </span>
-                          <div class="progress-value">
-                            <div>
-                              80%<br />
-                              <span>Animation</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="home__social">
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
         </div>
-      </div>
-    </div>
 
-    <div id="services" class="services section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div
-              class="section-heading wow fadeInDown"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <h6>Our Services</h6>
-              <h4>What Our Agency <em>Provides</em></h4>
-              <div class="line-dec"></div>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="naccs">
-              <div class="grid">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="menu">
-                      <div class="first-thumb active">
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-01.png"
-                              alt=""
-                          /></span>
-                          Apartments
-                        </div>
-                      </div>
-                      <div>
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-02.png"
-                              alt=""
-                          /></span>
-                          Food &amp; Life
-                        </div>
-                      </div>
-                      <div>
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-03.png"
-                              alt=""
-                          /></span>
-                          Cars
-                        </div>
-                      </div>
-                      <div>
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-04.png"
-                              alt=""
-                          /></span>
-                          Shopping
-                        </div>
-                      </div>
-                      <div class="last-thumb">
-                        <div class="thumb">
-                          <span class="icon"
-                            ><img
-                              src="assets/images/service-icon-01.png"
-                              alt=""
-                          /></span>
-                          Traveling
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-12">
-                    <ul class="nacc">
-                      <li class="active">
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>SEO Analysis &amp; Daily Reports</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>Healthy Food &amp; Life</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image-02.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>Car Re-search &amp; Transport</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image-03.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>Online Shopping &amp; Tracking ID</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image-04.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div>
-                          <div class="thumb">
-                            <div class="row">
-                              <div class="col-lg-6 align-self-center">
-                                <div class="left-text">
-                                  <h4>Enjoy &amp; Travel</h4>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt ut labore et dolore kengan darwin
-                                    doerski token. dover lipsum lorem and the
-                                    others.
-                                  </p>
-                                  <div class="ticks-list">
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Data
-                                      Info</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> SEO
-                                      Analysis</span
-                                    >
-                                    <span
-                                      ><i class="fa fa-check"></i> Optimized
-                                      Template</span
-                                    >
-                                  </div>
-                                  <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sedr do eiusmod deis tempor
-                                    incididunt.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="col-lg-6 align-self-center">
-                                <div class="right-image">
-                                  <img
-                                    src="assets/images/services-image.jpg"
-                                    alt=""
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="free-quote" class="free-quote">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 offset-lg-4">
-            <div
-              class="section-heading wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
-              <h6>Get Your Free Quote</h6>
-              <h4>Grow With Us Now</h4>
-              <div class="line-dec"></div>
-            </div>
-          </div>
-          <div
-            class="col-lg-8 offset-lg-2 wow fadeIn"
-            data-wow-duration="1s"
-            data-wow-delay="0.8s"
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
           >
-            <form id="search" action="#" method="GET">
-              <div class="row">
-                <div class="col-lg-4 col-sm-4">
-                  <fieldset>
-                    <input
-                      type="web"
-                      name="web"
-                      class="website"
-                      placeholder="Your website URL..."
-                      autocomplete="on"
-                      required
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-lg-4 col-sm-4">
-                  <fieldset>
-                    <input
-                      type="address"
-                      name="address"
-                      class="email"
-                      placeholder="Email Address..."
-                      autocomplete="on"
-                      required
-                    />
-                  </fieldset>
-                </div>
-                <div class="col-lg-4 col-sm-4">
-                  <fieldset>
-                    <button type="submit" class="main-button">
-                      Get Quote Now
-                    </button>
-                  </fieldset>
-                </div>
-              </div>
-            </form>
-          </div>
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="0"
+                y="0"
+                href="assets/img/Blue Poison_E2.png"
+              />
+            </g>
+          </svg>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div id="portfolio" class="our-portfolio section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div
-              class="section-heading wow fadeInLeft"
-              data-wow-duration="1s"
-              data-wow-delay="0.3s"
-            >
-              <h6>Our Portofolio</h6>
-              <h4>See Our Recent <em>Projects</em></h4>
-              <div class="line-dec"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="container-fluid wow fadeIn"
-        data-wow-duration="1s"
-        data-wow-delay="0.7s"
-      >
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="loop owl-carousel">
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/portfolio-01.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>Website Builder</h4>
-                      <span>Marketing</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/portfolio-01.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>Website Builder</h4>
-                      <span>Marketing</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/portfolio-02.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>Website Builder</h4>
-                      <span>Marketing</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/portfolio-03.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>Website Builder</h4>
-                      <span>Marketing</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="item">
-                <a href="#">
-                  <div class="portfolio-item">
-                    <div class="thumb">
-                      <img src="assets/images/portfolio-04.jpg" alt="" />
-                    </div>
-                    <div class="down-content">
-                      <h4>Website Builder</h4>
-                      <span>Marketing</span>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-    <div id="blog" class="blog">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-4 offset-lg-4 wow fadeInDown"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
-          >
-            <div class="section-heading">
-              <h6>Recent News</h6>
-              <h4>Check Our Blog <em>Posts</em></h4>
-              <div class="line-dec"></div>
-            </div>
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/Blue Poison.png" alt="" />
           </div>
-          <div
-            class="col-lg-6 show-up wow fadeInUp"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
-          >
-            <div class="blog-post">
-              <div class="thumb">
-                <a href="#"
-                  ><img src="assets/images/blog-post-01.jpg" alt=""
-                /></a>
-              </div>
-              <div class="down-content">
-                <span class="category">SEO Analysis</span>
-                <span class="date">03 August 2021</span>
-                <a href="#"
-                  ><h4>
-                    Lorem Ipsum Dolor Sit Amet, Consectetur Adelore Eiusmod
-                    Tempor Incididunt
-                  </h4></a
-                >
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  doers itii eiumod deis tempor incididunt ut labore.
-                </p>
-                <span class="author"
-                  ><img src="assets/images/author-post.jpg" alt="" />By: Andrea
-                  Mentuzi</span
-                >
-                <div class="border-first-button">
-                  <a href="#">Discover More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 wow fadeInUp"
-            data-wow-duration="1s"
-            data-wow-delay="0.3s"
-          >
-            <div class="blog-posts">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="post-item">
-                    <div class="thumb">
-                      <a href="#"
-                        ><img src="assets/images/blog-post-02.jpg" alt=""
-                      /></a>
-                    </div>
-                    <div class="right-content">
-                      <span class="category">SEO Analysis</span>
-                      <span class="date">24 September 2021</span>
-                      <a href="#"
-                        ><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a
-                      >
-                      <p>
-                        Lorem ipsum dolor sit amet, cocteturi adipiscing
-                        eliterski.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="post-item">
-                    <div class="thumb">
-                      <a href="#"
-                        ><img src="assets/images/blog-post-03.jpg" alt=""
-                      /></a>
-                    </div>
-                    <div class="right-content">
-                      <span class="category">SEO Analysis</span>
-                      <span class="date">24 September 2021</span>
-                      <a href="#"
-                        ><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a
-                      >
-                      <p>
-                        Lorem ipsum dolor sit amet, cocteturi adipiscing
-                        eliterski.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="post-item last-post-item">
-                    <div class="thumb">
-                      <a href="#"
-                        ><img src="assets/images/blog-post-04.jpg" alt=""
-                      /></a>
-                    </div>
-                    <div class="right-content">
-                      <span class="category">SEO Analysis</span>
-                      <span class="date">24 September 2021</span>
-                      <a href="#"
-                        ><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a
-                      >
-                      <p>
-                        Lorem ipsum dolor sit amet, cocteturi adipiscing
-                        eliterski.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div id="contact" class="contact-us section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 offset-lg-3">
-            <div
-              class="section-heading wow fadeIn"
-              data-wow-duration="1s"
-              data-wow-delay="0.5s"
-            >
-              <h6>Contact Us</h6>
-              <h4>Get In Touch With Us <em>Now</em></h4>
-              <div class="line-dec"></div>
-            </div>
-          </div>
-          <div
-            class="col-lg-12 wow fadeInUp"
-            data-wow-duration="0.5s"
-            data-wow-delay="0.25s"
-          >
-            <form id="contact" action="" method="post">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="contact-dec">
-                    <img src="assets/images/contact-dec-v2.png" alt="" />
-                  </div>
-                </div>
-                <div class="col-lg-5">
-                  <div id="map">
-                    <iframe
-                      src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                      width="100%"
-                      height="636px"
-                      frameborder="0"
-                      style="border: 0"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <div class="fill-form">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <div class="info-post">
-                          <div class="icon">
-                            <img src="assets/images/phone-icon.png" alt="" />
-                            <a href="#">010-020-0340</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="info-post">
-                          <div class="icon">
-                            <img src="assets/images/email-icon.png" alt="" />
-                            <a href="#">our@email.com</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="info-post">
-                          <div class="icon">
-                            <img src="assets/images/location-icon.png" alt="" />
-                            <a href="#">123 Rio de Janeiro</a>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <input
-                            type="name"
-                            name="name"
-                            id="name"
-                            placeholder="Name"
-                            autocomplete="on"
-                            required
-                          />
-                        </fieldset>
-                        <fieldset>
-                          <input
-                            type="text"
-                            name="email"
-                            id="email"
-                            pattern="[^ @]*@[^ @]*"
-                            placeholder="Your Email"
-                            required=""
-                          />
-                        </fieldset>
-                        <fieldset>
-                          <input
-                            type="subject"
-                            name="subject"
-                            id="subject"
-                            placeholder="Subject"
-                            autocomplete="on"
-                          />
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-6">
-                        <fieldset>
-                          <textarea
-                            name="message"
-                            type="text"
-                            class="form-control"
-                            id="message"
-                            placeholder="Message"
-                            required=""
-                          ></textarea>
-                        </fieldset>
-                      </div>
-                      <div class="col-lg-12">
-                        <fieldset>
-                          <button
-                            type="submit"
-                            id="form-submit"
-                            class="main-button"
-                          >
-                            Send Message Now
-                          </button>
-                        </fieldset>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <p>
-              Copyright © 2022 DigiMedia Co., Ltd. All Rights Reserved.
-              <br />Design:
-              <a
-                href="https://templatemo.com"
-                target="_parent"
-                title="free css templates"
-                >TemplateMo</a
-              >
+          <div>
+            <h2 class="about__subtitle">I'am Yoga Prastyo</h2>
+            <p class="about__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat
+              ut voluptates soluta, aut earum nemo recusandae cumque
+              perferendis! Recusandae alias accusamus atque.
             </p>
           </div>
         </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+              optio id vero amet, alias architecto consectetur error eum eaque
+              sit.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">UX/UI</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+
+        <div class="work__container bd-grid">
+          <a href="" class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work2.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work3.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work4.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work5.jpg" alt="" />
+          </a>
+          <a href="" class="work__img">
+            <img src="assets/img/work6.jpg" alt="" />
+          </a>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input
+              type="button"
+              value="Enviar"
+              class="contact__button button"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Yoga Prastyo</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
       </div>
+      <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
     </footer>
 
-    <!-- Scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/animation.js"></script>
-    <script src="assets/js/imagesloaded.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
